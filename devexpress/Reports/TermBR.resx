@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xrLabel4.Text" xml:space="preserve">
+    <value>Site e proprietários de aplicativos móveis ou desenvolvedores devem permitir que os usuários saber de qualquer acordo a que estão a ser obrigados a quando se inscrever para o seu serviço.
+
+Ao colocar seus acordos legais (isso inclui suas Política de Privacidade, Termos e Condições ou Termos de Serviço ou Termos de Uso), use a técnica clique-wrap em lugares estratégicos, como durante o registro e log-in, e completá-lo com o browse- embrulhe técnica também.
+
+Um clique-wrap é o acordo legal para a qual o usuário deve concordar clicando em um "OK", "Aceito" ou "Concordo" botão em uma caixa de diálogo antes de usar o serviço (este pode ser seu site, seu aplicativo móvel, e assim por diante).
+
+Este é um acordo click-wrap, onde os usuários são obrigados a verificar a caixa "Eu concordo" antes de continuar:</value>
+  </data>
+  <data name="xrLabel2.Text" xml:space="preserve">
+    <value>Termos de Serviço explicar as coisas relacionadas a e definir a relação jurídica entre o usuário e os serviços prestados por diversas empresas. Ao optar por usar os serviços on-line que você está interessado, você é obrigado a respeitar esses regulamentos e no caso de você não, você vai ser desligado.
+
+É vital para você ter esse tipo de contrato definido no lugar para exibir limitações sobre o que pode ser feito eo que não pode ser feito com o seu conteúdo. Além disso, usá-lo para estabelecer limites sobre as expectativas do lado de seus usuários, que devem ser especificados na frente.</value>
+  </data>
+  <data name="lblObservation.Text" xml:space="preserve">
+    <value>Um Termo de Acordo de Serviço é um conjunto de regulamentos que os usuários devem concordar em seguir a fim de utilizar um serviço. Termos de Uso é muitas vezes chamado termos de serviço e, por vezes, os Termos e Condições, bem como Disclaimer, principalmente, ao abordar o uso do site.
+
+Estes termos abrangem uma vasta gama de questões, tais como os seguintes exemplos: avisos de direitos autorais, as políticas da respectiva empresa de marketing, qual é o significado do comportamento do usuário aceitável enquanto on-line etc.
+
+Com base nos Termos de empresas contrato de serviço pode decidir restringir ou mesmo cancelar o acesso dos usuários a seus serviços, caso eles violar os termos do contrato.
+
+Apenas a partir das descrições acima, você deve ter agora uma idéia bem formada sobre o porquê de ter este tipo de pôr em prática para o seu negócio on-line documento é importante.</value>
+  </data>
+</root>

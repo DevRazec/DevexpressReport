@@ -1,0 +1,241 @@
+.dxssControl_Moderno1 
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d1d1d1;
+	font: 14px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxr-tabContent 
+{
+	border-left-style: none;
+	border-right-style: none;
+}
+.dxssControl_Moderno1 .dxss-gl .dxss-v,
+.dxssControl_Moderno1 .dxss-gl .dxss-h 
+{
+	border-color: #d1d1d1;
+}
+.dxssControl_Moderno1 .dxss-rowHeader 
+{	
+	border-right: 1px solid #d1d1d1;
+	border-top: 1px solid #d1d1d1;
+}
+.dxssControl_Moderno1 .dxss-colHeader 
+{
+	border-bottom: 1px solid #d1d1d1;
+	border-left: 1px solid #d1d1d1;
+}
+.dxssControl_Moderno1 .dxss-crse 
+{
+	background-color: #1d85cd; 
+}
+.dxssControl_Moderno1 .dxss-trbe 
+{
+	border-top-color: #0a67ab;
+}
+.dxssControl_Moderno1 .dxss-rrbe 
+{
+	border-right-color: #0a67ab;
+}
+.dxssControl_Moderno1 .dxss-brbe 
+{
+	border-bottom-color: #0a67ab;
+}
+.dxssControl_Moderno1 .dxss-lrbe 
+{
+	border-left-color: #0a67ab;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1 .dxtc-leftIndent
+{
+	width: 0!important;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1 > .dxtc-stripContainer
+{
+	background: #fafafa;
+	padding: 0!important;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-tab,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-activeTab,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom.dxtc-noSpacing > .dxtc-stripContainer .dxtc-activeTab.dxtc-lead,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-leftIndent,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-spacer,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-rightIndent,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-sbWrapper,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-sbIndent,
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-sbSpacer
+{
+    border-top: 1px solid #d1d1d1!important;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-tab
+{
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-tab .dxtc-link 
+{
+	padding: 7px 15px 5px 16px;
+}
+
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-activeTab
+{
+    border-top: 1px solid transparent!important;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-activeTab .dxtc-link 
+{
+	padding: 7px 14px 5px 15px;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > .dxtc-stripContainer .dxtc-activeTab.dxtc-lead
+{
+    border-left: 1px solid transparent!important;
+}
+.dxssControl_Moderno1.dxhe-rtl .dxtcLite_Moderno1.dxtc-bottom .dxtc-stripContainer .dxtc-activeTab.dxtc-lead
+{
+    border-left: 1px solid #D1D1D1 !important;
+    border-right: 1px solid transparent!important;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1 > .dxtc-stripContainer .dxtc-tab
+{
+	background: transparent;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1 > .dxtc-stripContainer .dxtc-tabHover
+{
+	background: #337AB7;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1 > .dxtc-stripContainer .dxtc-activeTab
+{
+	background-color: white!important;
+	border: 1px solid #d1d1d1;
+	border-top: 0!important;
+}
+.dxssControl_Moderno1 .dxtcLite_Moderno1.dxtc-bottom > ul
+{
+    border: 0!important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1 > .dxtc-stripContainer.dxtc-strip
+{
+    padding-top: 4px !important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top .dxtc-leftIndent
+{
+    width: 4px !important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > .dxtc-stripContainer .dxtc-tab,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > .dxtc-stripContainer .dxtc-activeTab,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top.dxtc-noSpacing > .dxtc-stripContainer .dxtc-activeTab.dxtc-lead,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > .dxtc-stripContainer .dxtc-leftIndent,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > .dxtc-stripContainer .dxtc-spacer,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > .dxtc-stripContainer .dxtc-rightIndent
+{
+    border-bottom: 1px solid #d1d1d1!important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > .dxtc-stripContainer .dxtc-activeTab
+{
+    border-bottom: 1px solid transparent!important;
+    border-top: 1px solid #d1d1d1!important;
+}
+.dxssControl_Moderno1.dxhe-rtl .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top .dxtc-stripContainer .dxtc-activeTab.dxtc-lead
+{
+    border-left: 1px solid #D1D1D1 !important;
+    border-right: 1px solid transparent!important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top .dxtc-strip.dxtc-stripContainer .dxtc-tab
+{
+    border-top: 1px solid transparent!important;
+    border-left: 1px solid transparent!important;
+    border-right: 1px solid transparent!important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top .dxtc-strip.dxtc-stripContainer .dxtc-tab.dxr-inactiveTab,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top .dxtc-strip.dxtc-stripContainer .dxtc-activeTab.dxr-inactiveTab
+{
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top .dxtc-strip.dxtc-stripContainer .dxtc-spacer
+{
+    width: 2px;
+    margin-left: -1px;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxtcLite_Moderno1.dxtc-top > ul
+{
+    border: 0!important;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxr-minBtn
+{
+    margin: 1px 5px 0 0;
+}
+.dxssControl_Moderno1 .dxtbControl_Moderno1.dxtbr_Moderno1,
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxpc-mainDiv.dxr-minPopup
+{
+    border: 0;
+}
+.dxssControl_Moderno1 .dxrControl_Moderno1 .dxr-tabContent
+{
+    border-width: 0 0 1px 0;
+    border-color: #D1D1D1;
+}
+.dxssControl_Moderno1 .dxss-hrg,
+.dxssControl_Moderno1 .dxss-vrg {
+	background-color: #0a67ab;
+}
+.dxssControl_Moderno1 .dxss-tse
+{
+	border-color: #0a67ab;
+}
+.dxssControl_Moderno1 .dxss-tre
+{
+	background: url('TouchResize.png');
+}
+/* Loading panel */
+.dxssLoadingDiv_Moderno1
+{
+    background: white;
+    opacity: 0.85 !important;
+    filter: alpha(opacity=85);
+}
+.dxssLoadingPanel_Moderno1
+{
+	font: 14px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+	color: #2B2B2B;
+	background-color: White;
+	border: 1px solid #cfcfcf;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1);
+}
+.dxssLoadingPanel_Moderno1 td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 15px 34px 15px 20px;
+}
+.dxssLoadingPanel_Moderno1 .dxlp-loadingImage
+{
+	background-image: url('../Web/Loading.gif');
+	height: 40px;
+	width: 40px;
+}
+/* --------------Dialogs----------------- */
+.dxpcLite_Moderno1 .dxssDlgFooter
+{
+	background-color: #fafafa;
+	border-top: 1px #d1d1d1 solid;
+}
+
+.dxpcLite_Moderno1 .dxssDlgInsertImageForm .dxssDlgImagePreviewCell
+{
+    color: #737373;
+    border: dashed 1px #cac8c8;
+}
+
+.dxssControl_Moderno1 .dxpcLite_Moderno1 .dxrpControl_Moderno1
+{
+	width: 100% !important;
+}
+.dxssControl_Moderno1 .dxpcLite_Moderno1 .dxrpControl_Moderno1 .dxucControl_Moderno1,
+.dxssControl_Moderno1 .dxpcLite_Moderno1 .dxrpControl_Moderno1 .dxeButtonEdit_Moderno1,
+.dxssControl_Moderno1 .dxpcLite_Moderno1 .dxrpControl_Moderno1 .dxeTextBox_Moderno1
+{
+	width: 350px !important;
+}
+.dxssControl_Moderno1 .dxrpControl_Moderno1 .dxrpcontent
+{
+	padding: 9px 10px 10px 10px !important;
+}

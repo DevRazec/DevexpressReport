@@ -1,0 +1,119 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="devexpress.Products" %>
+
+<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMenu" runat="server">
+</asp:Content>--%>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderContent" runat="server">
+
+    <script type="text/javascript">
+               
+        function OnCalculateGain(s, e) {
+            var unitPrice = GridProduct.GetEditor('UnitPrice');
+            var purchasePrice = GridProduct.GetEditor('PurchasePrice');
+            var value1 = parseFloat(unitPrice.replace(',', '.'));
+            var value2 = parseFloat(purchasePrice.replace(',', '.'));
+            if ((value1 != null) && (value2 != null)) {
+                GridProduct.SetEditValue('Gain', value1 + value2);
+            }
+        }
+
+        function OnSetDefaultPrice(s, e) {
+            var defaultPrice = s.GetSelectedItem().GetColumnText('DefaultPrice');
+            var value3 = parseFloat(defaultPrice.replace(',', '.'));
+            GridProduct.SetEditValue('UnitPrice', value3);
+        }
+
+    </script>
+
+
+    <dx:ASPxGridView ID="GridProduct" runat="server" AutoGenerateColumns="False" Width="100%" DataSourceID="DBProduct" KeyFieldName="ProductID" ClientInstanceName="GridProduct">
+        <Settings ShowFilterRow="True" />
+        <Columns>
+            <dx:GridViewCommandColumn ShowClearFilterButton="True" ShowDeleteButton="True" ShowEditButton="True" ShowNewButtonInHeader="True" VisibleIndex="0">
+
+            </dx:GridViewCommandColumn>
+
+            <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" VisibleIndex="1" Visible="false">
+                <EditFormSettings Visible="False" />
+            </dx:GridViewDataTextColumn>
+
+            <dx:GridViewDataTextColumn FieldName="ProductName" Caption="Product Name" VisibleIndex="2">
+            </dx:GridViewDataTextColumn>
+
+            <dx:GridViewDataComboBoxColumn FieldName="CategoryID" Caption="ID/Category/Price" VisibleIndex="3" Settings-AllowHeaderFilter="False" ShowInCustomizationForm="True" Settings-AllowAutoFilter="false">
+                <PropertiesComboBox DataSourceID="DBCategory" ValueField="CategoryID" ValueType="System.Int32" TextField="CategoryName" TextFormatString="{0}|{1}|{2}"
+                    EnableCallbackMode="true" CallbackPageSize="10" DropDownStyle="DropDown" IncrementalFilteringMode="Contains">
+                    <Columns>
+                        <dx:ListBoxColumn FieldName="CategoryID" Caption="ID" />
+                        <dx:ListBoxColumn FieldName="CategoryName" Caption="Category" />
+                        <dx:ListBoxColumn FieldName="DefaultPrice" Caption="Price" />
+                    </Columns>
+                    <ValidationSettings ErrorDisplayMode="ImageWithTooltip" Display="Dynamic" SetFocusOnError="true">
+                        <RequiredField IsRequired="true" ErrorText="This is required" />
+                    </ValidationSettings>
+                    <InvalidStyle BackColor="LightPink" />
+                    <ClientSideEvents SelectedIndexChanged="function(s, e) {OnSetDefaultPrice(s, e)}" />
+                </PropertiesComboBox>
+            </dx:GridViewDataComboBoxColumn>
+
+            <dx:GridViewDataSpinEditColumn FieldName="UnitPrice" Caption="Price" VisibleIndex="4" Width="150px">
+                <PropertiesSpinEdit DisplayFormatString="c2" Increment="0" SpinButtons-ClientVisible="false" NumberType="Float"
+                    MaxValue="2147483647" MinValue="0" AllowNull="false" AllowMouseWheel="false" DisplayFormatInEditMode="true">
+                    <ClientSideEvents ValueChanged="function(s, e) {OnCalculateGain(s, e);}" />
+                </PropertiesSpinEdit>
+            </dx:GridViewDataSpinEditColumn>
+
+            <dx:GridViewDataSpinEditColumn FieldName="PurchasePrice" Caption="Purchase Price" VisibleIndex="4" Visible="false">
+                <EditFormSettings Visible="True" />
+                <PropertiesSpinEdit DisplayFormatString="c2" Increment="0" SpinButtons-ClientVisible="false" NumberType="Float"
+                    MaxValue="2147483647" MinValue="0" AllowNull="false" AllowMouseWheel="false" DisplayFormatInEditMode="true">
+                    <ClientSideEvents ValueChanged="function(s, e) {OnCalculateGain(s, e);}" />
+                </PropertiesSpinEdit>
+            </dx:GridViewDataSpinEditColumn>
+
+            <dx:GridViewDataSpinEditColumn FieldName="Gain" Caption="Gain" Settings-AllowHeaderFilter="False" Settings-AllowAutoFilter="False" ShowInCustomizationForm="True" Visible="false"
+                VisibleIndex="5" ReadOnly="true" UnboundType="Decimal">
+                <EditFormSettings Visible="True" />
+                <PropertiesSpinEdit DisplayFormatString="c2" Increment="0" SpinButtons-ClientVisible="false" NumberType="Float"
+                    MaxValue="2147483647" MinValue="0" AllowNull="false" AllowMouseWheel="false" DisplayFormatInEditMode="true">
+                </PropertiesSpinEdit>
+            </dx:GridViewDataSpinEditColumn>
+
+        </Columns>
+        <SettingsEditing Mode="PopupEditForm" EditFormColumnCount="1" />
+        <SettingsPopup>
+            <EditForm Width="400" Height="270" HorizontalAlign="Center" VerticalAlign="WindowCenter" Modal="true" AllowResize="true" />
+        </SettingsPopup>
+        <Settings ShowTitlePanel="true" />
+        <SettingsText Title="Products" />
+    </dx:ASPxGridView>
+
+    <asp:SqlDataSource ID="DBCategory" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+        SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
+
+    <asp:SqlDataSource ID="DBProduct" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+        SelectCommand="SELECT * FROM [Products]"
+        DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = @ProductID"
+        InsertCommand="INSERT INTO [Products] ([CategoryID], [ProductName], [UnitPrice], [PurchasePrice]) VALUES (@CategoryID, @ProductName, @UnitPrice, @PurchasePrice)"
+        UpdateCommand="UPDATE [Products] SET [CategoryID] = @CategoryID, [ProductName] = @ProductName, [UnitPrice] = @UnitPrice, [PurchasePrice] = @PurchasePrice WHERE [ProductID] = @ProductID">
+        <DeleteParameters>
+            <asp:Parameter Name="ProductID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="CategoryID" Type="Int32" />
+            <asp:Parameter Name="ProductName" Type="String" />
+            <asp:Parameter Name="UnitPrice" Type="Double" />
+            <asp:Parameter Name="PurchasePrice" Type="Double" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="CategoryID" Type="Int32" />
+            <asp:Parameter Name="ProductName" Type="String" />
+            <asp:Parameter Name="UnitPrice" Type="Double" />
+            <asp:Parameter Name="PurchasePrice" Type="Double" />
+            <asp:Parameter Name="ProductID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
+
+</asp:Content>

@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA895EC3-7A74-4909-AC24-E740DAC96C6A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>devexpress</RootNamespace>
+    <AssemblyName>devexpress</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Web, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Moderno\Chart\Loading.gif" />
+    <Content Include="App_Themes\Moderno\Chart\styles.css" />
+    <Content Include="App_Themes\Moderno\Editors\edtProgressPositionBack.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBDecBtn.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBDecBtnDisabled.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBDecBtnHover.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBDecBtnPressed.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBIncBtn.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBIncBtnDisabled.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBIncBtnHover.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTBIncBtnPressed.png" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="App_Themes\Moderno\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="App_Themes\Moderno\Editors\sprite.css" />
+    <Content Include="App_Themes\Moderno\Editors\sprite.png" />
+    <Content Include="App_Themes\Moderno\Editors\styles.css" />
+    <Content Include="App_Themes\Moderno\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Moderno\GridView\sprite.css" />
+    <Content Include="App_Themes\Moderno\GridView\sprite.png" />
+    <Content Include="App_Themes\Moderno\GridView\styles.css" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\dxheAudio.png" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\dxheFlash.png" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\dxheNotSupported.png" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\dxheVideo.png" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\dxheYoutube.png" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\Moderno\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\Moderno\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Moderno\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\Moderno\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Moderno\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Moderno\Scheduler\sprite.css" />
+    <Content Include="App_Themes\Moderno\Scheduler\sprite.png" />
+    <Content Include="App_Themes\Moderno\Scheduler\styles.css" />
+    <Content Include="App_Themes\Moderno\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\Moderno\SpellChecker\styles.css" />
+    <Content Include="App_Themes\Moderno\Spreadsheet\sprite.css" />
+    <Content Include="App_Themes\Moderno\Spreadsheet\sprite.png" />
+    <Content Include="App_Themes\Moderno\Spreadsheet\styles.css" />
+    <Content Include="App_Themes\Moderno\Spreadsheet\TouchResize.png" />
+    <Content Include="App_Themes\Moderno\TreeList\sprite.css" />
+    <Content Include="App_Themes\Moderno\TreeList\sprite.png" />
+    <Content Include="App_Themes\Moderno\TreeList\styles.css" />
+    <Content Include="App_Themes\Moderno\Web\DocumentViewerSprite.css" />
+    <Content Include="App_Themes\Moderno\Web\DocumentViewerSprite.png" />
+    <Content Include="App_Themes\Moderno\Web\fcElbow.gif" />
+    <Content Include="App_Themes\Moderno\Web\fcLine.gif" />
+    <Content Include="App_Themes\Moderno\Web\fmFileCheck.png" />
+    <Content Include="App_Themes\Moderno\Web\HESprite.css" />
+    <Content Include="App_Themes\Moderno\Web\HESprite.png" />
+    <Content Include="App_Themes\Moderno\Web\igLoading.gif" />
+    <Content Include="App_Themes\Moderno\Web\igNavBtnsBack.png" />
+    <Content Include="App_Themes\Moderno\Web\isLoading.gif" />
+    <Content Include="App_Themes\Moderno\Web\Loading.gif" />
+    <Content Include="App_Themes\Moderno\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Moderno\Web\rcMapImage.png" />
+    <Content Include="App_Themes\Moderno\Web\RESprite.css" />
+    <Content Include="App_Themes\Moderno\Web\RESprite.png" />
+    <Content Include="App_Themes\Moderno\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Moderno\Web\sprite.css" />
+    <Content Include="App_Themes\Moderno\Web\sprite.png" />
+    <Content Include="App_Themes\Moderno\Web\SSSprite.css" />
+    <Content Include="App_Themes\Moderno\Web\SSSprite.png" />
+    <Content Include="App_Themes\Moderno\Web\styles.css" />
+    <Content Include="App_Themes\Moderno\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Moderno\XtraReports\pageBottomBorder.png" />
+    <Content Include="App_Themes\Moderno\XtraReports\pageLeftBorder.png" />
+    <Content Include="App_Themes\Moderno\XtraReports\pageRightBorder.png" />
+    <Content Include="App_Themes\Moderno\XtraReports\pageTopBorder.png" />
+    <Content Include="App_Themes\Moderno\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Moderno\XtraReports\sprite.png" />
+    <Content Include="App_Themes\Moderno\XtraReports\styles.css" />
+    <Content Include="css\animations.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="Customers.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="OrderDetail.aspx" />
+    <Content Include="Orders.aspx" />
+    <Content Include="PrintReport.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="Shippers.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.aspx.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDetail.aspx.designer.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintReport.aspx.cs">
+      <DependentUpon>PrintReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintReport.aspx.designer.cs">
+      <DependentUpon>PrintReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Expenditure.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Expenditure.Designer.cs">
+      <DependentUpon>Expenditure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Order.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TermBR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TermBR.Designer.cs">
+      <DependentUpon>TermBR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TermUS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TermUS.Designer.cs">
+      <DependentUpon>TermUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shippers.aspx.cs">
+      <DependentUpon>Shippers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shippers.aspx.designer.cs">
+      <DependentUpon>Shippers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_Themes\Moderno\ASPxButton.skin" />
+    <Content Include="App_Themes\Moderno\ASPxButton.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Moderno\ASPxButtonEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Moderno\ASPxCalendar.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\Moderno\ASPxCallbackPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\Moderno\ASPxCaptcha.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Moderno\ASPxCheckBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxCheckBoxList.skin" />
+    <Content Include="App_Themes\Moderno\ASPxCheckBoxList.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxCloudControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\Moderno\ASPxColorEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Moderno\ASPxComboBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxDataView.skin" />
+    <Content Include="App_Themes\Moderno\ASPxDataView.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Moderno\ASPxDateEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\Moderno\ASPxDateNavigator.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\Moderno\ASPxDockPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxDocumentViewer.skin" />
+    <Content Include="App_Themes\Moderno\ASPxDocumentViewer.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\Moderno\ASPxDropDownEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxFileManager.skin" />
+    <Content Include="App_Themes\Moderno\ASPxFileManager.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxFilterControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxFormLayout.skin" />
+    <Content Include="App_Themes\Moderno\ASPxFormLayout.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\Moderno\ASPxGridLookup.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxGridView.skin" />
+    <Content Include="App_Themes\Moderno\ASPxGridView.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxHeadline.skin" />
+    <Content Include="App_Themes\Moderno\ASPxHeadline.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\Moderno\ASPxHtmlEditor.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Moderno\ASPxHyperLink.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxImageGallery.skin" />
+    <Content Include="App_Themes\Moderno\ASPxImageGallery.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxImageSlider.skin" />
+    <Content Include="App_Themes\Moderno\ASPxImageSlider.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxImageZoom.skin" />
+    <Content Include="App_Themes\Moderno\ASPxImageZoom.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxImageZoomNavigator.skin" />
+    <Content Include="App_Themes\Moderno\ASPxImageZoomNavigator.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxLabel.skin" />
+    <Content Include="App_Themes\Moderno\ASPxLabel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxListBox.skin" />
+    <Content Include="App_Themes\Moderno\ASPxListBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\Moderno\ASPxLoadingPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxMemo.skin" />
+    <Content Include="App_Themes\Moderno\ASPxMemo.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxMenu.skin" />
+    <Content Include="App_Themes\Moderno\ASPxMenu.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxNavBar.skin" />
+    <Content Include="App_Themes\Moderno\ASPxNavBar.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxNewsControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxPageControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxPageControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxPager.skin" />
+    <Content Include="App_Themes\Moderno\ASPxPager.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxPanel.skin" />
+    <Content Include="App_Themes\Moderno\ASPxPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\Moderno\ASPxPivotGrid.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxPopupControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\Moderno\ASPxPopupMenu.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\Moderno\ASPxProgressBar.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Moderno\ASPxRadioButton.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Moderno\ASPxRadioButtonList.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxRatingControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxRibbon.skin" />
+    <Content Include="App_Themes\Moderno\ASPxRibbon.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\Moderno\ASPxRoundPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxScheduler.skin" />
+    <Content Include="App_Themes\Moderno\ASPxScheduler.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxSiteMapControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\Moderno\ASPxSpellChecker.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Moderno\ASPxSpinEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxSplitter.skin" />
+    <Content Include="App_Themes\Moderno\ASPxSplitter.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxSpreadsheet.skin" />
+    <Content Include="App_Themes\Moderno\ASPxSpreadsheet.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTabControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTabControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTextBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTimeEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTitleIndex.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTokenBox.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTokenBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTrackBar.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTrackBar.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTreeList.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTreeList.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxTreeView.skin" />
+    <Content Include="App_Themes\Moderno\ASPxTreeView.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\Moderno\ASPxUploadControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\ASPxValidationSummary.skin" />
+    <Content Include="App_Themes\Moderno\ASPxValidationSummary.skin.bak" />
+    <Content Include="App_Themes\Moderno\MonthEdit.skin" />
+    <Content Include="App_Themes\Moderno\MonthEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxButton.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxButtonEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxCalendar.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxCallbackPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxCaptcha.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxChartControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxCheckBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxCheckBoxList.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxColorEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxComboBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxDataView.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxDateEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxDockPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxDocumentViewer.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxDropDownEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxFileManager.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxFormLayout.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxGridLookup.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxGridView.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxHtmlEditor.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxHyperLink.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxImageGallery.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxImageSlider.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxImageZoom.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxImageZoomNavigator.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxLabel.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxListBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxLoadingPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxMemo.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxMenu.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxNavBar.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxPageControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxPivotGrid.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxPopupControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxPopupMenu.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxProgressBar.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxRadioButton.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxRadioButtonList.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxRatingControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxReportToolbar.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxReportViewer.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxRibbon.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxRoundPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxScheduler.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxSpellChecker.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxSpinEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxSplitter.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxSpreadsheet.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTabControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTextBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTimeEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTokenBox.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTrackBar.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTreeList.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxTreeView.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxUploadControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\MVCxValidationSummary.skin.bak" />
+    <Content Include="App_Themes\Moderno\Parameters.config" />
+    <Content Include="App_Themes\Moderno\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\Moderno\RecurrenceTypeEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\Moderno\ReportDocumentMap.skin.bak" />
+    <Content Include="App_Themes\Moderno\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\Moderno\ReportParametersPanel.skin.bak" />
+    <Content Include="App_Themes\Moderno\ReportToolbar.skin" />
+    <Content Include="App_Themes\Moderno\ReportToolbar.skin.bak" />
+    <Content Include="App_Themes\Moderno\ReportViewer.skin" />
+    <Content Include="App_Themes\Moderno\ReportViewer.skin.bak" />
+    <Content Include="App_Themes\Moderno\WebChartControl.skin" />
+    <Content Include="App_Themes\Moderno\WebChartControl.skin.bak" />
+    <Content Include="App_Themes\Moderno\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\Moderno\WeekDaysEdit.skin.bak" />
+    <Content Include="App_Themes\Moderno\WeekOfMonthEdit.skin" />
+    <Content Include="App_Themes\Moderno\WeekOfMonthEdit.skin.bak" />
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\Expenditure.resx">
+      <DependentUpon>Expenditure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TermBR.resx">
+      <DependentUpon>TermBR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TermUS.resx">
+      <DependentUpon>TermUS.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3439/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
